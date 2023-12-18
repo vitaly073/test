@@ -1,0 +1,83 @@
+/*!
+Theme Name: wp_dev
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::root {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: Arial;
+}
+
+.app {
+    min-height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    position: relative;
+}
+
+.header,
+.footer {
+    background-color: rgba(0,0,0,0.7);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    column-gap: 30px;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+h1,
+p {
+    margin-bottom: 30px;
+}
+
